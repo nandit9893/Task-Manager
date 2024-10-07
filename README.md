@@ -23,3 +23,13 @@ This project is a fully functional user data management developed using the MERN
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Deployment**: Render.com
+
+### Images
+## Home 
+![User Management](front-end/src/assets/UM1.png)
+
+## User Data
+![User Management](front-end/src/assets/UM2.png)
+
+## New User Data
+![User Management](front-end/src/assets/UM3.png)
