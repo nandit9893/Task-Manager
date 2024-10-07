@@ -1,0 +1,182 @@
+.userdata {
+  margin-top: 5px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.user-data-specific {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 10px;
+}
+
+.user-data-specific h2 {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #1546ba 30%, #c0bfe8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.all-user-specific-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 120%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-data-get {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-data-get p {
+  font-size: 24px;
+  font-weight: 400;
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  min-height: 30px;
+}
+
+.user-data-get p strong {
+  font-size: 28px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.user-data-get p input {
+  width: 70%; 
+  max-width: 500px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(77, 65, 65, 0.2);
+  box-sizing: border-box;
+}
+
+.user-image-specifice label {
+  cursor: pointer;
+}
+
+.user-image-specifice img {
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.user-image-specifice img:hover {
+  border: 1px solid black;
+  transform: scale(1.1);
+}
+
+.user-change-data-buttons {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 200;
+}
+
+.user-change-data-buttons button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: rgb(48, 230, 48);
+  cursor: pointer;
+  transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.user-change-data-buttons button p {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.user-change-data-buttons button:hover {
+  background-color: rgb(34, 192, 34);
+  transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+  .userdata {
+    height: 120vh;
+  }
+  .logo img {
+    height: 120vh;
+  }
+  .user-change-data-buttons {
+    bottom: -130px;
+  }
+  .user-change-data-buttons button {
+    padding: 5px 10px;
+  }
+  .all-user-specific-data {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .user-data-specific h2 {
+    font-size: 35px;
+  }
+  .user-data-get {
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .user-data-get p {
+    font-size: 16px;
+    max-width: 100%;
+    margin: 0;
+  }
+  .user-data-get p strong {
+    font-size: 20px;
+  }
+  .user-data-get p input {
+    max-width: 100%;
+    font-size: 16px;
+    padding: 0 2px;
+  }
+}
+@media (max-width: 500px) {
+  .user-data-specific h2 {
+    margin-top: -50px;
+  }
+}

@@ -1,0 +1,193 @@
+.newuser {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.newuser img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.newuser-data {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  padding: 10px;
+  width: 90%;
+}
+
+.newuser-data h2 {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #1546ba 30%, #c0bfe8 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.adding-new-user-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text-data p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text-data p strong {
+  font-size: 28px;
+  font-weight: 600;
+}
+.text-data p input {
+  font-size: 22px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 50%;
+}
+.user-image label {
+  cursor: pointer;
+}
+.user-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.changes-button {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.changes-button button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: rgb(48, 230, 48);
+  cursor: pointer;
+  transition: transform 0.5s ease, background-color 0.3s ease;
+}
+
+.changes-button button:hover {
+  background-color: rgb(34, 192, 34);
+  transform: scale(1.1);
+}
+
+.changes-button button p {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 1280px) {
+  .newuser {
+    height: 100vh;
+  }
+  .adding-new-user-details {
+    width: 60%;
+  }
+  .text-data p strong {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .text-data p input {
+    font-size: 18px;
+  }
+  .user-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .newuser {
+    margin-top: -50px;
+    height: 970px;
+  }
+  .adding-new-user-details {
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+  }
+  .text-data {
+    width: 100%;
+  }
+  .user-image {
+    margin-top: 20px;
+  }
+  .user-image img {
+    width: 200px;
+    height: 200px;
+  }
+  .text-data p strong {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .text-data p input {
+    font-size: 18px;
+    width: 60%;
+  }
+  .changes-button {
+    position: relative;
+    bottom: 200px;
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 20px; 
+  }
+}
+@media (max-width: 700px) {
+  .adding-new-user-details {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .text-data p input {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .adding-new-user-details {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .text-data p strong {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .text-data p input {
+    font-size: 18px;
+    width: 60%;
+  }
+}
