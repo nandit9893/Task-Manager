@@ -3,7 +3,7 @@ import axios from "axios";
 export const AppContext = createContext();
 
 const AppContextProvider = ({ children }) => {
-  const url = "http://localhost:8000";
+  const url = "https://task-manger-back-end.onrender.com";
   const [userData, setUserData] = useState([]);
 
   const gettingUserData = async () => {
