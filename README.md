@@ -33,3 +33,13 @@ This project is a fully functional user data management developed using the MERN
 
 ## New User Data
 ![User Management](front-end/src/assets/UM3.png)
+
+## Responsive
+## Home
+![User Management](front-end/src/assets/UM5.png)
+
+## New User
+![User Management](front-end/src/assets/UM4.png)
+
+## User Data
+![User Management](front-end/src/assets/UM6.png)
